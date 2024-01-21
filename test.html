@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Narindra Rakotonjanahary | CSE 121B | BYU-Idaho</title>
+    
 </head>
 <body>
     <h1>Narindra Rakotonjanahary | CSE 121B | BYU-Idaho</h1>
     <h2>Rexburg, Idaho, USA</h2>
     <hr>
+
+    <div id="result"></div>
+
+    <script>
+        let arr1 = [100, 72, "manga", "natation", 36]; 
+        let r = arr1;
+        // document.getElementById("result").innerHTML = `Result is ${r}`;
+        
+        let i = 0;
+
+
+        function myLoop(){
+            setTimeout(function(){
+                document.getElementById("result").innerHTML = arr1[i];
+                i++;
+                if(i <arr1.length){
+                    myLoop();
+                }
+                else{
+                    i = 0;
+                    myLoop();
+                }
+            }, 500)
+        }
+        
+        myLoop();
+
+        // for (let i = 0; i<arr1.length; i++){
+        //     document.getElementById("result").innerHTML = arr1[i];            
+        // }
+        const person = "Mike";
+        const age = 28;
+        let wdlist = ["That", "is", "."];
+
+        function myTag(strings, personExp, ageExp) {
+        const str0 = strings[0]; // "That "
+        const str1 = strings[1]; // " is a "
+        const str2 = strings[2]; // "."
+
+        const ageStr = ageExp < 100 ? "youngster" : "centenarian";
+
+        // change the background color to red
+        
+
+        // We can even return a string built using a template literal
+        // return `${str0}${personExp}${str1}${ageStr}${str2}`;
+        }
+
+        // const output = myTag`${wdlist} ${person} is a ${age}`;
+
+        // console.log(output);
+        // That Mike is a youngster.
+
+    </script>
+
+
     
 </body>
 </html>  
