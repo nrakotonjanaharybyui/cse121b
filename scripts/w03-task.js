@@ -107,3 +107,4 @@ document.querySelector('#multiplied').innerHTML = multArray;
 let sumMultArray = (array1.map(num => num * 2)).reduce((sum, num) => sum + num);
 
 document.querySelector('#sumOfMultiplied').innerHTML = sumMultArray;
+
